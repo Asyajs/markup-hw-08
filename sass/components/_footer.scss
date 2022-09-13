@@ -1,0 +1,172 @@
+.footer {
+  background-color: $footer-bg-color;
+  padding-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+}
+  
+.footer-logo {
+  color: #EEEEEE;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+  
+.address{
+  padding-bottom: 60px;
+}
+
+.footer-adress {
+  color: $main-bg-color;
+  font-style: normal;
+}
+
+.footer-contact {
+  color: $secondary-text-color;
+  font-style: normal;
+}
+
+.join-box {
+  margin-left: 20px;
+  padding-top: 80px;
+  padding-left: 70px;
+}
+
+.join-box_title {
+  color: $main-bg-color;
+  font-weight: 700;
+  line-height: 16px;
+  padding-bottom: 20px;
+  font-family: Roboto;
+  text-transform: uppercase;
+}
+
+.join-box_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-box_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-box_link   {
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; 
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;  
+  transition-timing-function:$transition-timing;
+
+  &:hover {
+    background:$accent-color; 
+  }
+}
+
+.join-box_icon{ 
+  fill: $main-bg-color;
+
+  .join-box_link:hover & {
+    fill: $main-bg-color;
+  }
+}
+  
+.footer-mailing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-top: 80px;
+  padding-left: 70px;
+}
+
+.footer-mailing_text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $main-bg-color;
+}
+
+.footer-mailing_label {
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+.footer-input {
+  display: block;
+  width: 355px;
+  height: 50px;
+  padding: 15px 15px;
+  background-color:$footer-bg-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 250ms $transition-timing;
+  outline: none;
+}
+
+.footer-sumbmit {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-top: 110px;
+  margin-left: 12px;
+  padding: 12px 28px;
+  background:$accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $main-bg-color;
+}
+
+.check-icon {
+  width: 16px;
+  height: 16px;
+  fill: $main-bg-color;
+}
+
+.license .check-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $main-text-color;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.license {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox:checked + .license .check-icon-box {
+  background-color: $accent-color;
+  border: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+

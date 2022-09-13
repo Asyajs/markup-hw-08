@@ -1,0 +1,76 @@
+.section-team {
+  background-color: $secondary-bg-color;
+}
+
+.team-set {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.team-link {
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition-property: background-color; 
+  transition-duration: 250ms;
+  transition-timing-function:$transition-timing;
+  &:hover {
+    background-color:$accent-color;
+  }
+  
+}
+
+.team-icon-link {
+  fill: $icon-color;
+  transition-property: fill; 
+  transition-duration: 250ms;
+  transition-timing-function:$transition-timing;
+
+  .team-link:hover & {
+    fill: $main-bg-color;
+  }
+}
+
+.team-tumb {
+  padding: 30px;
+  text-align: center;
+  background-color:$main-bg-color;
+  border:1px solid #EEEEEE;
+  justify-content:space-between;
+  box-shadow: $card-shadow;
+}
+
+.team-flex {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+.section-footer {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $main-text-color;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.section-roll {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.section-indent {
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.18;
+  padding-top: 10px;
+} 
