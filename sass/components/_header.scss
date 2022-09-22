@@ -18,13 +18,28 @@
 } 
 
 .nav-list {
-  font-size: 16px;
+  // font-size: 16px;
+  // font-weight: 500;
+  // line-height: 16px;
+  // letter-spacing: 0.02em;
+  // display: flex;
+  // justify-content: space-between;
+  // margin-left: 50px;
+
+  display: none;
+   @media screen and (min-width: 768px) {
+  display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+     font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
+  }
 }
 
 .nav-list_item:not(:last-child) {
@@ -53,6 +68,13 @@
   display: flex;
   margin-left: auto;
   font-size: 16px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    font-size: 16px;
+    }
 }
 
 .header-inform_link {
