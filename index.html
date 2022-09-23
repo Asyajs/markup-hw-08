@@ -22,7 +22,12 @@
       <a href="./index.html" class="header-logo">
         <span class="header-logo_accent">Web</span>Studio
       </a>
+<div 
+  class="menu-container js-menu-container" 
+  id="mobile-menu">
 
+
+</div>
       <nav>
 
         <ul class="nav-list">
@@ -60,10 +65,17 @@
           </a>
         </li>
       </ul>
-
-      <button type="button" class="menu-button is-open">
-        <svg width="40px" height="40px" aria-label="mobile menu switch">
-          <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross-close" ></use>
+<!-- Mobile menu -->
+      <button 
+      type="button" 
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu">
+        <svg 
+          width="40px" 
+          height="40px" 
+          aria-label="mobile menu switch" 
+        >
           <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-first"></use>
         </svg>
       </button>
@@ -89,7 +101,7 @@
 
     <!--FEATURES -->
 
-    <section>
+    <section class="section-features">
       <div class="container">
         <ul class="features-list">
 
@@ -186,7 +198,7 @@
     <section class="section-team">
       <div class="container">
 
-        <h2 class="section-footer">Наша команда</h2>
+        <h2 class="section-team-title">Наша команда</h2>
 
         <ul class="team-set">
           <li class="team">
@@ -594,7 +606,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

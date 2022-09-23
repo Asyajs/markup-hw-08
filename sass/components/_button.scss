@@ -2,8 +2,8 @@
   border: 0px;
   cursor: pointer;
   border-radius: 4px;
-  margin: 0px;
-  padding: 0px;
+  // margin: 0px;
+  // padding: 0px;
 }
 
 .text-button {
@@ -22,12 +22,21 @@
 
 .buttons {
   display: flex;
-  justify-content: center;
-  padding-top: 90px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+
+   @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+   }
+
 }
 
 .button-item {
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
   padding: 6px 22px;
   cursor: pointer;
   font-size: 16px;
@@ -46,24 +55,6 @@
   }
 }
 
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
 
-}
-  
-.menu-button .icon-cross{
-  display: none;
-}
 
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
 
