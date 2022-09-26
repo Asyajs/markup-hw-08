@@ -21,6 +21,7 @@
         <span class="header-logo_accent">Web</span>Studio
       </a>
       <nav>
+
         <ul class="nav-list">
           <li class="nav-list_item">
             <a href="./index.html" class="site-nav-link">Студия</a>
@@ -34,27 +35,31 @@
         </ul>
       </nav>
 
-  <ul class="header-inform">
-    <li class="header-inform_item">
-      <a href="" class="header-inform_link">
-        <svg class="header-inform_link-icon" >
-          <use href="./images/sprite.svg#icon-envelope"></use>
-        </svg>
-        info@example.com
-      </a>
-    </li>
+      <ul class="header-inform">
+        <li class="header-inform_item">
+          <a href="" class="header-inform_link">
+            <svg class="header-inform_link-icon">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@example.com
+          </a>
+        </li>
 
-    <li class="header-inform_item">
-      <a href="" class="header-inform_link">
-        <svg class="header-inform_link-icon">
-          <use href="./images/sprite.svg#icon-smartphone"></use>
+        <li class="header-inform_item">
+          <a href="" class="header-inform_link">
+            <svg class="header-inform_link-icon">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 099 111 11 11
+          </a>
+        </li>
+      </ul>
+      <!-- Mobile menu -->
+      <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40px" height="40px">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-first"></use>
         </svg>
-        +38 099 111 11 11
-      </a>
-    </li>
-  </ul>
-
-      
+      </button>
 
   </header>
 
@@ -306,5 +311,72 @@
     </div>
     </div>
   </footer>
+
+   <!-- mobile-modal menu -->
+  <!-- mobile-modal menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="20px" height="20px">
+        <use href="./images/symbol-defs.svg#icon-cross-close"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-thumb">
+      <ul class="mobile-thumb-list">
+        <li class="mobile-thumb-link">
+          <a href="./index.html" class="mobile-contact "> Студия
+          </a>
+        </li>
+        <li class="mobile-thumb-link">
+          <a href="./portfolio.html" class="mobile-contact  mobile-contact_current"> Портфолио
+          </a>
+        </li>
+        <li class="mobile-thumb-link">
+          <a href="" class="mobile-contact"> Контакты
+          </a>
+        </li>
+      </ul>
+
+      <div class="">
+        <ul class="contact-box">
+          <li class="contact-box-list">
+            <a href="" class="box-list-phone">
+              +38 099 111 11 11
+            </a>
+          </li>
+
+          <li class="mobile-mail-list">
+            <a href="" class="mobile-mail">
+              info@example.com
+            </a>
+          </li>
+        </ul>
+
+
+        <ul class="mobile-social-link">
+          <li>
+            <a href="" class="mobile-social">Instagram</a>
+          </li>
+          <li>
+            <a href="" class="mobile-social">Twitter</a>
+          </li>
+          <li>
+            <a href="" class="mobile-social">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="mobile-social">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

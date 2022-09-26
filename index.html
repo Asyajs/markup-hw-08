@@ -22,12 +22,6 @@
       <a href="./index.html" class="header-logo">
         <span class="header-logo_accent">Web</span>Studio
       </a>
-<div 
-  class="menu-container js-menu-container" 
-  id="mobile-menu">
-
-
-</div>
       <nav>
 
         <ul class="nav-list">
@@ -65,17 +59,9 @@
           </a>
         </li>
       </ul>
-<!-- Mobile menu -->
-      <button 
-      type="button" 
-      class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu">
-        <svg 
-          width="40px" 
-          height="40px" 
-          aria-label="mobile menu switch" 
-        >
+      <!-- Mobile menu -->
+      <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40px" height="40px">
           <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu-first"></use>
         </svg>
       </button>
@@ -597,6 +583,64 @@
         </button>
 
 
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile-modal menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="20px" height="20px">
+        <use href="./images/symbol-defs.svg#icon-cross-close"></use>
+      </svg>
+    </button>
+
+    <div class="mobile-thumb">
+      <ul class="mobile-thumb-list">
+        <li class="mobile-thumb-link">
+          <a href="./index.html" class="mobile-contact mobile-contact_current "> Студия
+          </a>
+        </li>
+        <li class="mobile-thumb-link">
+          <a href="./portfolio.html" class="mobile-contact"> Портфолио
+          </a>
+        </li>
+        <li class="mobile-thumb-link">
+          <a href="" class="mobile-contact"> Контакты
+          </a>
+        </li>
+      </ul>
+
+      <div class="">
+        <ul class="contact-box">
+          <li class="contact-box-list">
+            <a href="" class="box-list-phone">
+              +38 099 111 11 11
+            </a>
+          </li>
+
+          <li class="mobile-mail-list">
+            <a href="" class="mobile-mail">
+              info@example.com
+            </a>
+          </li>
+        </ul>
+
+
+        <ul class="mobile-social-link">
+          <li>
+            <a href="" class="mobile-social">Instagram</a>
+          </li>
+          <li>
+            <a href="" class="mobile-social">Twitter</a>
+          </li>
+          <li>
+            <a href="" class="mobile-social">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="mobile-social">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
