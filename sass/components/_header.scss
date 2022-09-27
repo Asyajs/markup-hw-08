@@ -97,7 +97,10 @@
 }
 
 .header-inform_item:not(:last-child) {
-  margin-right: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .header-inform_link-icon {
